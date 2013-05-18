@@ -1,7 +1,8 @@
 class EventController < ApplicationController
 
   def index
-    @events = Event.limit(10).order("start ASC").group_by { |event|
+    #add end date and show all that have not ended yet OR not started yet (if end date is not available) - or started + 1 hour or something
+    @events = Event.where('start >= ?', DateTime.now).limit(10).order("start ASC").group_by { |event|
       event.start.to_date
     }
   end
