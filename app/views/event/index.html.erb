@@ -1,22 +1,22 @@
 <!--
 Possible to search at the top?
+- use js template - handlebars etc. and get data using json
 
-Add:
-Category
-Location
+Limit length of title to ensure always on 1 line !? Could do it with javascript
 -->
 
 <ul class="event-list">
 
 <% @events.each_pair do |date, events| %>
 
-<li class="event-list-date"><%= relative_date(date) %></li>
+    <li class="event-list-date"><%= relative_date(date) %></li>
 
     <% events.each do |event| %>
     <li>
         <a href="<%= event_url(event.id) %>">
-          <span><%= display_time(event.start) %></span>
-          <%= event.title%></a>
+          <span class="event-list-item-time"><%= display_time(event.start) %></span>
+          <span class="event-list-item-title"><%= event.title%></span>
+        </a>
     </li>
     <% end %>
 

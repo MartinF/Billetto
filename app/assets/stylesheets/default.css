@@ -1,11 +1,19 @@
+html {
+    background: #f2f2f2;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
 body {
     margin:0;
-    background-color: #F2F2F2;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 62.5%; /* 16px × 62.5% = 10px */
+    line-height: 1.4;
 }
 
 h1 {
-    font-size: 26px;
+    font-size: 2.4em;
     font-weight: bold;
     text-transform: uppercase;
     margin:20px 0 10px 0;

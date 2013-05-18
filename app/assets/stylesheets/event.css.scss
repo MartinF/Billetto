@@ -1,93 +1,116 @@
+// Variables
+$text-strong: #000;
+$text-weak: #bbb;
+$item-bg-color: #fff;
+
 ul.event-list {
   list-style-type: none;
   margin: 0;
   padding: 0;
 
   >li {
+    margin: 0.5em 0;
+
     >a {
-      color: #000;
-
-      /* use proper gradient instead */
-      border:1px solid #ddd;
-      border-bottom:2px solid #ddd;
-
       display: block;
-      padding: 15px 10%; /* fix the padding at some point and make it looks nice an centered */
-      margin: 4px 0;
-      background-color: #fff;
-      font-size: 20px;
+      padding: 0.7em;
+      font-size: 1.6em;
       text-decoration: none;
-
       text-transform: uppercase;
+      color: $text-strong;
+      background-color: $item-bg-color;
+      box-shadow: 1px 1px 3px 0px #ddd;
 
       &:visited {
-        color: #aaa;
+        color: $text-weak;
       }
       &:hover {
-        color: #000;
-        border:1px solid #aaa;
-        border-bottom:2px solid #aaa;
+        color: $text-strong;
+        box-shadow: 1px 1px 3px 0px #aaa;
       }
 
-      >span {
-        color:#bbb;
-        margin-right:20px;
+      >.event-list-item-time {
+        display: block;
+        overflow: hidden;
+        float:left;
+        margin-right:1em;
+        color:$text-weak;
+      }
+      >.event-list-item-title {
+        display: block;
+        overflow: hidden;
+      }
+    }
+
+    &.event-list-date {
+      margin:1.5em 1em 0.5em 1em;
+      font-size: 1.4em;
+      font-weight: bold;
+      color: $text-weak;
+    }
+  }
+}
+
+article {
+  &.event {
+    background-color: $item-bg-color;
+    padding:20px 20px 20px 0;
+
+    >.event-image {
+      float: left;
+      overflow: hidden;
+      margin-left:20px;
+      border: 1px solid #f9f9f9;
+
+      >img {
+        width:100%;
+        max-width: 600px;
+      }
+    }
+    >.event-info {
+      overflow: hidden;
+      padding-left:20px;
+      min-width: 240px;
+
+      >.event-description {
+        font-size: 1.6em;
+        margin: 20px 0;
+      }
+      >.event-price {
+        font-size: 1.6em;
+        font-weight: bold;
+      }
+    }
+
+    .event-info-box {
+      display: block;
+      margin:20px 0;
+      padding:10px;
+      background-color: #f7f7f7;
+      border:1px solid #CBCBCB;
+
+      >.event-date {
+        background: url("http://billetto.dk/assets/pages/event_show/b_i_ico_date.png") no-repeat scroll 0 0 transparent;
+        font-size: 1.6em;
+        height: 20px;
+        margin: 5px 0 8px;
+        padding-left: 22px;
+      }
+      >.event-address {
+        background: url("http://billetto.dk/assets/pages/event_show/b_i_ico_addr.png") no-repeat scroll 0 -1px transparent;
+        font-size: 1.3em;
+        height: 20px;
+        margin: 5px 0;
+        padding-left: 22px;
       }
     }
   }
-  >li.event-list-date {
-    font-size: 16px;
-    font-weight: bold;
-    color: #bbb;
-    margin:20px 10% 5px 10%;
-  }
+}
+
+@media all and (orientation:portrait) {
+}
+
+@media all and (orientation:landscape) {
 }
 
 
-
-.event {
-  background-color: #fff;
-  padding:20px 20px 20px 0;
-}
-.event-image {
-  float: left;
-  overflow: hidden;
-  margin-left: 20px;
-  border: 1px solid #f9f9f9;
-}
-.event-info {
-  float: none;
-  overflow: auto;
-  padding-left:20px;
-  min-width: 240px;
-}
-.event-info-box {
-  clear1:left;
-
-  display: block;
-  margin:20px 0;
-  padding:10px;
-  background-color: #f7f7f7;
-  border:1px solid #CBCBCB;
-}
-.event-date {
-  background: url("http://billetto.dk/assets/pages/event_show/b_i_ico_date.png") no-repeat scroll 0 0 transparent;
-  font-size: 16px;
-  height: 20px;
-  margin: 5px 0 8px;
-  padding-left: 22px;
-}
-.event-address {
-  background: url("http://billetto.dk/assets/pages/event_show/b_i_ico_addr.png") no-repeat scroll 0 -1px transparent;
-  font-size: 13px;
-  height: 20px;
-  margin: 5px 0;
-  padding-left: 22px;
-}
-.event-description {
-  margin: 20px 0;
-}
-.event-price {
-  font-size: 16px;
-  font-weight: bold;
-}
