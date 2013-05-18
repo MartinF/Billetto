@@ -1,0 +1,25 @@
+<!--
+Possible to search at the top?
+
+Add:
+Category
+Location
+-->
+
+<ul class="event-list">
+
+<% @events.each_pair do |date, events| %>
+
+<li class="event-list-date"><%= relative_date(date) %></li>
+
+    <% events.each do |event| %>
+    <li>
+        <a href="<%= event_url(event.id) %>">
+          <span><%= display_time(event.start) %></span>
+          <%= event.title%></a>
+    </li>
+    <% end %>
+
+<% end %>
+
+</ul>

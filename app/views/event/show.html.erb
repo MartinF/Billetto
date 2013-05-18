@@ -1,0 +1,29 @@
+<div class="event">
+
+  <img src="<%= @event.image  %>" alt="" class="event-image">
+
+  <div class="event-info">
+
+    <h1><%= @event.title%></h1>
+
+    <div class="event-info-box">
+      <div class="event-date">
+        <%= display_datetime(@event.start) %>
+      </div>
+      <div class="event-address">
+        <%= @event.address%>
+      </div>
+    </div>
+
+    <div class="event-description">
+      <%= @event.description %>
+    </div>
+
+    <div class="event-price">
+        Entree: <%= display_price(@event.price) %>
+    </div>
+  </div>
+
+  <div style="clear:both"></div>
+
+</div>

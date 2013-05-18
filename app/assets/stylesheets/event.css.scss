@@ -1,0 +1,93 @@
+ul.event-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  >li {
+    >a {
+      color: #000;
+
+      /* use proper gradient instead */
+      border:1px solid #ddd;
+      border-bottom:2px solid #ddd;
+
+      display: block;
+      padding: 15px 10%; /* fix the padding at some point and make it looks nice an centered */
+      margin: 4px 0;
+      background-color: #fff;
+      font-size: 20px;
+      text-decoration: none;
+
+      text-transform: uppercase;
+
+      &:visited {
+        color: #aaa;
+      }
+      &:hover {
+        color: #000;
+        border:1px solid #aaa;
+        border-bottom:2px solid #aaa;
+      }
+
+      >span {
+        color:#bbb;
+        margin-right:20px;
+      }
+    }
+  }
+  >li.event-list-date {
+    font-size: 16px;
+    font-weight: bold;
+    color: #bbb;
+    margin:20px 10% 5px 10%;
+  }
+}
+
+
+
+.event {
+  background-color: #fff;
+  padding:20px 20px 20px 0;
+}
+.event-image {
+  float: left;
+  overflow: hidden;
+  margin-left: 20px;
+  border: 1px solid #f9f9f9;
+}
+.event-info {
+  float: none;
+  overflow: auto;
+  padding-left:20px;
+  min-width: 240px;
+}
+.event-info-box {
+  clear1:left;
+
+  display: block;
+  margin:20px 0;
+  padding:10px;
+  background-color: #f7f7f7;
+  border:1px solid #CBCBCB;
+}
+.event-date {
+  background: url("http://billetto.dk/assets/pages/event_show/b_i_ico_date.png") no-repeat scroll 0 0 transparent;
+  font-size: 16px;
+  height: 20px;
+  margin: 5px 0 8px;
+  padding-left: 22px;
+}
+.event-address {
+  background: url("http://billetto.dk/assets/pages/event_show/b_i_ico_addr.png") no-repeat scroll 0 -1px transparent;
+  font-size: 13px;
+  height: 20px;
+  margin: 5px 0;
+  padding-left: 22px;
+}
+.event-description {
+  margin: 20px 0;
+}
+.event-price {
+  font-size: 16px;
+  font-weight: bold;
+}

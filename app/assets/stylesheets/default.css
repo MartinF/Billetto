@@ -1,0 +1,12 @@
+body {
+    margin:0;
+    background-color: #F2F2F2;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:20px 0 10px 0;
+}
