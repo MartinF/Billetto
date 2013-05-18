@@ -18,11 +18,11 @@
     </div>
 
     <div class="event-description">
-      <%= @event.description %>
+      <%= simple_format(@event.description) %>
     </div>
 
     <div class="event-price">
-        Entree: <%= display_price(@event.price) %>
+        Pris: <%= display_price(@event.price) %>
     </div>
   </div>
 
