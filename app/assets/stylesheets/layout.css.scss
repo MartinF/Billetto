@@ -25,9 +25,10 @@ header {
     position: absolute;
     z-index: 1;
 
-    //left: 50%;
-    //margin-left:-55px;
-    left:1%;
+    // center align or left align?
+    left: 50%;
+    margin-left:-55px;
+    //left:1%;  // left aligned
 
     bottom: -5px;
     width: 110px;
