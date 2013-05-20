@@ -12,9 +12,13 @@
 <body>
     <header>
       <a href="/" class="logo"></a>
+      <form action="<%= root_url() %>" method="get">
+         <input type="search" name="search" placeholder="søg" value="<%= params[:search] %>">
+       </form>
     </header>
     <section class="view">
       <%= yield %>
     </section>
 </body>
 </html>
+

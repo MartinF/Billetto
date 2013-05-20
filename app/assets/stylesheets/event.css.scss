@@ -51,6 +51,14 @@ ul.event-list {
   }
 }
 
+
+.search-info {
+  font-size: 1.4em;
+  color: $text-strong;
+  font-weight: bold;
+}
+
+
 article {
   &.event {
     background-color: $item-bg-color;
