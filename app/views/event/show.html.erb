@@ -7,7 +7,9 @@
   <div class="event-info">
 
     <h1><%= @event.title%></h1>
-
+    <div class="event-info-hosted-by">
+      Arrangeres af: <%= @event.hosted_by %>
+    </div>
     <div class="event-info-box">
       <div class="event-date">
         <%= display_datetime(@event.start) %>

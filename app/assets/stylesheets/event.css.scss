@@ -45,10 +45,6 @@ ul.event-list {
         }
         >.event-list-item-title {
         }
-        >.event-hosted-by {
-          font-size: 0.7em;
-          font-weight: normal;
-        }
         >img {
           width: 100%;
           max-width: 600px;
@@ -95,6 +91,9 @@ article {
       padding-left:20px;
       min-width: 240px;
 
+      >.event-info-hosted-by {
+        font-size: 1.2em;
+      }
       >.event-description {
         font-size: 1.6em;
         margin: 20px 0;

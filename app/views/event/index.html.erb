@@ -18,18 +18,15 @@ Use js template - handlebars etc., and get data using json
 
     <% events.each do |event| %>
     <li>
-        <a href="<%= event_url(event.id) %>">
+        <%= link_to( event ) do %>
           <span class="event-list-item-time"><%= display_time(event.start) %></span>
           <span class="event-container">
               <span class="event-list-item-title">
                 <%= event.title%>
               </span>
-              <span class="event-hosted-by">
-                Hosted by: <%= event.hosted_by %>
-              </span>
               <img src="<%= event.image %>" alt="">
           </span>
-        </a>
+        <% end %>
     </li>
     <% end %>
 
