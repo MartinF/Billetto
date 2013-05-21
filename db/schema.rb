@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130518170929) do
+ActiveRecord::Schema.define(version: 20130521123152) do
 
   create_table "events", force: true do |t|
     t.string   "title"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20130518170929) do
     t.datetime "start"
     t.string   "address"
     t.decimal  "price",       precision: 8, scale: 2
+    t.string   "hosted_by"
   end
 
 end
