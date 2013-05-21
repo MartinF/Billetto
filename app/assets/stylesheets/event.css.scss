@@ -36,10 +36,25 @@ ul.event-list {
         margin-right:1em;
         color:$text-weak;
       }
-      >.event-list-item-title {
-        display: block;
+      >.event-container{
+        display:block;
         overflow: hidden;
+
+        >* {
+          display: block;
+        }
+        >.event-list-item-title {
+        }
+        >.event-hosted-by {
+          font-size: 0.7em;
+          font-weight: normal;
+        }
+        >img {
+          width: 100%;
+          max-width: 600px;
+        }
       }
+
     }
 
     &.event-list-date {
