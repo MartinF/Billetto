@@ -53,7 +53,8 @@ Event.create( start:"22-5-2013 22:00",
               description:"PINSE PAN RETRO // PAN RETRO goes MARDI GRAS!\n\nIgen er det tid til at rulle den røde løber ud, få hængt det gamle PAN skilt op udenfor og finde den gamle PAN-ånd frem!\n\nOplev bl.a :\n\n5 barer - 6 forskellige musikstile (NY REGGAE LOUNGE!)\n\nTraditionen tro vil der være bar i gården samt dj // Cocktailbar med smooth-house // Chill-out bar med grandprix klassikere // Øverst (PAN 2) den glade dansemusik // Nederst (PAN 1) hård house, psy-trance etc etc.\n\nENDNU ENGANG VELKOMMEN TIL FESTERNE SOM SELV HETEROER IKKE VIL GÅ GLIP AF!",
               image: "http://billetto-production.s3.amazonaws.com/cropped_images/531277/cropped/Eflyer_3.jpg",
               address: "Knabrostræde 3, 1210 København K",
-              price: 100 )
+              price: 100,
+              hosted_by: "En eller anden" )
 
 Event.create( start:"22-5-2013 19:00",
               title:"CUBANSK MIDDAG OG ROMSMAGNING",
